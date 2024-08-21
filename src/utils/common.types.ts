@@ -1,3 +1,10 @@
+export type Poligono = 'cuadrado' | 'rectangulo' | 'triangulo';
+export enum Figura {
+    CUADRADO = 'cuadrado',
+    RECTANGULO = 'rectangulo',
+    TRIANGULO = 'triangulo'
+}
+
 /**
  * Tipo de dato para funciones que reciben un solo parámetro y no devuelven nada.
  *
