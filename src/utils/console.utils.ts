@@ -26,8 +26,8 @@ export function promptAndProcess(
     cb: OneParamVoidFunction<string>
 ) {
     const rl = createReadlineInterface();
-    rl.question(`${question} `, name => {
-        cb(name);
+    rl.question(`${question} `, value => {
+        cb(value);
         rl.close();
     });
 }
